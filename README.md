@@ -65,7 +65,7 @@ Learning-Socially-Compatible-Autonomous-Driving/
 ## Installation
 Create and activate a dedicated environment:
 ```bash
-conda create -n InjPred python=3.9
+conda create -n InjPred python=3.7
 conda activate InjPred
 pip install -r requirements.txt
 ```
@@ -120,12 +120,12 @@ Weighted by hyperparameters `ratio_E`, `ratio_D`.
 ---
 
 ## Scripts
-| Script | Purpose |
-|--------|---------|
-| `main_C2S.py` | Train & evaluate teacher TCN on crash pulses. |
-| `main_KD.py` | Train & evaluate student MLP with feature distillation. |
-| `utils/backbones.py` | Defines `TemporalBlock`, `TemporalConvNet`, `MLP`, `PositionalEncoding`, `TCN`, `S2S`. |
-| `utils/load_data.py` | Loads data, normalizes features, generates AIS labels, returns splits as PyTorch tensors. |
+| Script | Purpose                                                                                                                                                                                                                                                                        |
+|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `main_C2S.py` | Train & evaluate teacher TCN on crash pulses: The first part is Model Training, the second part is Performance Evaluation, and the third part is Model Inference Efficiency Evaluation. When executing the code for model evaluation, the model training parts need to be commented out. |
+| `main_KD.py` | Train & evaluate student MLP with feature distillation: The first part is Model Training, the second part is Performance Evaluation, and the third part is Model Inference Efficiency Evaluation. When executing the code for model evaluation, the model training parts need to be commented out.                                                                                                                                                                                                                       |
+| `utils/backbones.py` | Defines `TemporalBlock`, `TemporalConvNet`, `MLP`, `PositionalEncoding`, `TCN`, `S2S`.                                                                                                                                                                                         |
+| `utils/load_data.py` | Loads data, normalizes features, generates AIS labels, returns splits as PyTorch tensors.                                                                                                                                                                                      |
 
 ---
 
@@ -135,7 +135,7 @@ Weighted by hyperparameters `ratio_E`, `ratio_D`.
 | **RMSE / MAE** | Standard regression error metrics for HIC. |
 | **R²** | Coefficient of determination for HIC regression. |
 | **Accuracy** | Correct AIS predictions / total. |
-| **G-mean** | $\left( \prod_{c} \text{Sensitivity}_c \right)^{\frac{1}{C}}$ – robust to imbalance|
+| **G-mean** | $ \left( \prod_{c=1}^{C} \mathrm{Sensitivity}_c \right)^{1/C} $ — robust to imbalance |
 | **FLOPs** | Multiply–add operations estimated via `thop.profile`. |
 | **Parameters** | Trainable parameter count. |
 | **Inference Time** | Mean ± std per sample at `batch_size=1`. |
@@ -152,4 +152,4 @@ Weighted by hyperparameters `ratio_E`, `ratio_D`.
 ---
 
 
-*Last updated: 2025-07-27*
+*Last updated: 2025-09-06*
