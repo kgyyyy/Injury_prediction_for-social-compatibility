@@ -142,13 +142,13 @@ Ensure you have a working PyTorch environment
 ---
 
 ## Metric Definitions
-| Metric | Description |
-|--------|-------------|
-| **RMSE / MAE** | Standard regression error metrics for HIC. |
-| **R²** | Coefficient of determination for HIC regression. |
-| **Accuracy** | Correct AIS predictions / total. |
-| **G-mean** | $ \left( \prod_{c=1}^{C} Sensitivity_c \right)^{1/C} $ — robust to imbalance. |
-| **Confusion Matrix** | Distribution of predicted vs. actual AIS classes. |
+| Metric | Description                                                                 |
+|--------|-----------------------------------------------------------------------------|
+| **RMSE / MAE** | Standard regression error metrics for HIC.                                  |
+| **R²** | Coefficient of determination for HIC regression.                            |
+| **Accuracy** | Correct AIS predictions / total.                                            |
+| **G-mean** | $\left( \prod_{c=1}^{C} Sensitivity_c \right)^{1/C}$ — robust to imbalance. |
+| **Confusion Matrix** | Distribution of predicted vs. actual AIS classes.                           |
 
 ---
 
