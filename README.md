@@ -18,9 +18,8 @@ It includes:
 5. [Dataset](#dataset)  
 6. [Model Pipelines](#model-pipelines)  
 7. [Scripts](#scripts)  
-8. [Metric Definitions](#metric-definitions)  
-9. [Citation](#citation)  
-10. [Contact](#contact)  
+8. [Metric Definitions](#metric-definitions)   
+9. [Contact](#contact)  
 
 ---
 
@@ -153,18 +152,7 @@ Ensure you have a working PyTorch environment
 
 ---
 
-## Citation
-If you use this code, please cite:
 
-```
-@article{Kuang2025SocialDriving,
-  title   = {Learning socially compatible autonomous driving under safety-critical scenarios},
-  author  = {Kuang, Gaoyuan and Wang, Qingfan and Shen, Jiajie and Lin, Jinghe and Gao, Xin and Ren, Kun and Wang, Jianqiang and Feng, Shuo and Nie, Bingbing},
-  year    = {2025}
-}
-```
-
----
 
 ## Contact
 **Primary contacts:**  
@@ -175,4 +163,4 @@ If you use this code, please cite:
 - Jiajie Shen  
 - Gaoyuan Kuang  
 
-*Last updated: 2025-09-06*
+*Last updated: 2025-09*
